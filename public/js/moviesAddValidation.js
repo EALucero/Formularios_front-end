@@ -13,20 +13,20 @@ window.addEventListener('load', () => {
 
     $form.title.addEventListener('blur', e => {
         if ($form.title.value == "") {
-            $form.title.classList.add('is-invalid');
+            $form.title.classList.toggle('is-invalid');
             
         } else {
-            $form.title.classList.add('is-valid');
+            $form.title.classList.toggle('is-valid');
             $form.title.classList.remove('is-invalid');
         }
     });
 
     $form.rating.addEventListener('blur', e => {
         if ($form.rating.value == "") {
-            $form.rating.classList.add('is-invalid');     
+            $form.rating.classList.toggle('is-invalid');     
         } else {
             $form.rating.classList.remove('is-invalid');
-            $form.rating.classList.add('is-valid');
+            $form.rating.classList.toggle('is-valid');
         }
     });
 
